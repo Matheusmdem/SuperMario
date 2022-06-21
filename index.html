@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shotcut icon" href="./images/pipe-game.png" type="image/png" />
+  <link rel="stylesheet" href="./index.css" />
+  <title>Mario StartSe</title>
+</head>
+<body>
+  <div class="game">
+    
+    <img src="./images/clouds-gamer.png" alt="nuvens" class="cloud-game" />
+    <img src="./images/super-mario.gif" alt="mario" class="super-mario" />
+    <img src="./images/pipe-game.png" alt="cano" class="pipe-game" />
+    <audio id="end">
+      <source src="./audio/Super_Mario_World_Game_Over_(getmp3.pro).mp3" type="audio/mp3">
+    </audio>
+    <audio id="start">
+      <source src="./audio/Overworld_Theme_-_Super_Mario_Worl_(getmp3.pro).mp3" type="audio/mp3">
+    </audio>
+    <audio id="jumpSound">
+      <source src="./audio/Super_Mario_World_-_Jump_Sound_Effe_(getmp3.pro).mp3" type="audio/mp3">
+    </audio>
+    <div class="scores">
+      <div class="score">PONTUAÇÃO: <span id="score"></span></div>
+      <div id="records" class="score">RECORDES
+        <span id="record1">0</span>
+        <span id="record2">0</span>
+        <span id="record3">0</span>
+      </div>
+    </div>
+    <div class="play">
+      <h2>TECLAS "ESPAÇO", "ENTER" OU "FLECHA PARA CIMA" PARA PULAR.</h2>
+      <button type="button" class="btn" onclick="begin()">INICIAR JOGO</button>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
